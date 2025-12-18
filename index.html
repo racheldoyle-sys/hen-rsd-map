@@ -1,22 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>USA Map Example</title>
-    <script src="mapdata.js"></script>
-    <script src="usmap.js"></script>
-  </head>
-  <body>
-  <h1>HTML5/Javascript USA Map</h1>
-    <div id="map"></div>
-    
-    
-      <p>This map was created and can be edited at <a href="http://simplemaps.com/custom/us/plZNhu6O">http://simplemaps.com/custom/us/plZNhu6O</a>
-    
-    
-    <p>To learn how to install this map on your web page, see the <a href="http://simplemaps.com/docs">Documentation</a>.</p>
-	</body>
-</html>
-      
-    
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HEN Map</title>
 
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #map { width: 100%; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <!-- Load your mapdata first, then the SimpleMaps engine -->
+  <script src="./mapdata.js"></script>
+  <script src="./usmap.js"></script>
+
+  <script>
+    // Sends messages to the Wix page code that is hosting this HTML in an iframe.
+    function sendToWix(payload) {
+      try {
+        // Wix HTML component receives this via #html1.onMessage(...)
+        window.parent.postMessage(payload, "*");
+      } catch (e) {
+        // Fail silently
+      }
+    }
+
+    // SimpleMaps calls this function (if defined) whenever a state is clicked.
+    window.simplemaps_usmap_state_click = function (id) {
+      try {
+        console.log("State clicked in HTML embed:", id);
+
+        var st =
+          (window.simplemaps_usmap_mapdata &&
+           window.simplemaps_usmap_mapdata.state_specific &&
+           window.simplemaps_usmap_mapdata.state_specific[id]) || {};
+
+        sendToWix({
+          type: "henStateClicked",
+          id: id,
+          name: st.name || id,
+          color: st.color || "",
+          description: st.description || ""
+        });
+      } catch (e) {
+        sendToWix({ type: "henStateClicked", id: id });
+      }
+    };
+
+    // Optional: confirm that the map object exists after load
+    window.addEventListener("load", function () {
+      try {
+        if (!window.simplemaps_usmap_mapdata) {
+          console.warn("simplemaps_usmap_mapdata not found. mapdata.js may not be loading.");
+        }
+      } catch (e) {}
+    });
+  </script>
+</body>
+</html>
