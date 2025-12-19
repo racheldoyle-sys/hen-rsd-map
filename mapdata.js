@@ -622,8 +622,9 @@ var simplemaps_usmap_mapdata={
         "NV"
       ],
       name: "Eric Guida",
-      color: "#b7793e",
-      zoomable: "no"
+      color: "#8A5A3C",
+      zoomable: "no",
+      hover_color: "#A07152"
     },
     "1": {
       states: [
@@ -639,8 +640,9 @@ var simplemaps_usmap_mapdata={
         "LA"
       ],
       name: "Jason Floyd",
-      color: "#4a96a4",
-      zoomable: "no"
+      color: "#2F8FC2",
+      zoomable: "no",
+      hover_color: "#4FA4D1"
     },
     "2": {
       states: [
@@ -656,8 +658,9 @@ var simplemaps_usmap_mapdata={
         "IN"
       ],
       name: "Ryan Kostel",
-      color: "#39b2a6",
-      zoomable: "no"
+      color: "#2E6A5A",
+      zoomable: "no",
+      hover_color: "#458171"
     },
     "3": {
       states: [
@@ -672,11 +675,13 @@ var simplemaps_usmap_mapdata={
         "GA",
         "MS",
         "AL",
-        "FL"
+        "FL",
+        "DC"
       ],
       name: "Todd Holmes",
-      color: "#016979",
-      zoomable: "no"
+      color: "#9A6A48",
+      zoomable: "no",
+      hover_color: "#B18362"
     },
     "4": {
       states: [
@@ -693,8 +698,9 @@ var simplemaps_usmap_mapdata={
         "ME"
       ],
       name: "Robert Woodhead",
-      color: "#d9a95b",
-      zoomable: "no"
+      color: "#0E2A3D",
+      zoomable: "no",
+      hover_color: "#273F50"
     }
   }
 };
