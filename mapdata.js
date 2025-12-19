@@ -622,9 +622,9 @@ var simplemaps_usmap_mapdata={
         "NV"
       ],
       name: "Eric Guida",
-      color: "#8A5A3C",
+      color: "#6E4F3A",
       zoomable: "no",
-      hover_color: "#A07152"
+      hover_color: "#866652"
     },
     "1": {
       states: [
@@ -640,9 +640,9 @@ var simplemaps_usmap_mapdata={
         "LA"
       ],
       name: "Jason Floyd",
-      color: "#2F8FC2",
+      color: "#2C6F87",
       zoomable: "no",
-      hover_color: "#4FA4D1"
+      hover_color: "#46859B"
     },
     "2": {
       states: [
@@ -679,9 +679,9 @@ var simplemaps_usmap_mapdata={
         "DC"
       ],
       name: "Todd Holmes",
-      color: "#9A6A48",
+      color: "#8A5A3C",
       zoomable: "no",
-      hover_color: "#B18362"
+      hover_color: "#A07152"
     },
     "4": {
       states: [
