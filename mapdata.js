@@ -614,12 +614,12 @@ var simplemaps_usmap_mapdata={
     "0": {
       states: [
         "AK",
-        "HI",
-        "WA",
-        "OR",
-        "ID",
         "CA",
-        "NV"
+        "HI",
+        "ID",
+        "NV",
+        "OR",
+        "WA"
       ],
       name: "Eric Guida",
       color: "#6E4F3A",
@@ -628,16 +628,18 @@ var simplemaps_usmap_mapdata={
     },
     "1": {
       states: [
-        "MT",
-        "WY",
-        "UT",
-        "CO",
-        "AZ",
-        "NM",
-        "TX",
-        "OK",
         "AR",
-        "LA"
+        "AZ",
+        "CO",
+        "LA",
+        "MT",
+        "ND",
+        "NM",
+        "OK",
+        "SD",
+        "TX",
+        "UT",
+        "WY"
       ],
       name: "Jason Floyd",
       color: "#2C6F87",
@@ -646,16 +648,16 @@ var simplemaps_usmap_mapdata={
     },
     "2": {
       states: [
-        "ND",
-        "SD",
-        "NE",
-        "KS",
-        "MN",
         "IA",
-        "MO",
-        "WI",
         "IL",
-        "IN"
+        "IN",
+        "KS",
+        "MI",
+        "MN",
+        "MO",
+        "NE",
+        "OH",
+        "WI"
       ],
       name: "Ryan Kostel",
       color: "#2E6A5A",
@@ -664,19 +666,19 @@ var simplemaps_usmap_mapdata={
     },
     "3": {
       states: [
-        "MD",
+        "AL",
+        "DC",
         "DE",
-        "WV",
-        "VA",
+        "FL",
+        "GA",
+        "KY",
+        "MD",
+        "MS",
         "NC",
         "SC",
-        "KY",
         "TN",
-        "GA",
-        "MS",
-        "AL",
-        "FL",
-        "DC"
+        "VA",
+        "WV"
       ],
       name: "Todd Holmes",
       color: "#8A5A3C",
@@ -685,17 +687,17 @@ var simplemaps_usmap_mapdata={
     },
     "4": {
       states: [
+        "CT",
+        "MA",
+        "ME",
         "MI",
+        "NH",
+        "NJ",
+        "NY",
         "OH",
         "PA",
-        "NY",
-        "NJ",
-        "CT",
         "RI",
-        "MA",
-        "VT",
-        "NH",
-        "ME"
+        "VT"
       ],
       name: "Robert Woodhead",
       color: "#0E2A3D",
