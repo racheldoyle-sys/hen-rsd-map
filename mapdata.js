@@ -699,7 +699,7 @@ var simplemaps_usmap_mapdata={
         "RI",
         "VT"
       ],
-      name: "Robert Woodhead",
+      name: "George Sanders",
       color: "#0E2A3D",
       zoomable: "no",
       hover_color: "#273F50"
